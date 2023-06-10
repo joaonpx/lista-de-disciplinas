@@ -21,8 +21,8 @@ body {
 }
 
 main {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -96,34 +96,69 @@ table tfoot {
   font-weight: 700;
 }
 
-/* -------------- overlay -------------- */
-.overlay.opened {
-  position: absolute;
+/* -------------- modal -------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
 
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background-color: hsla(0, 0%, 0%, 0.7);
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  visibility: hidden;
 }
 
-.overlay .card {
-  display: none;
+.modal-overlay.active {
+  visibility: visible;
+}
 
-  width: 50%;
-  height: 30%;
-
+.modal-overlay .modal {
   background-color: var(--color-light);
 
   padding: 2.5rem;
 
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 }
 
-.overlay .card h2 {
-  font-size: 4rem;
+/* -------------- modal header -------------- */
+.modal-overlay .modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2.5rem;
+}
+
+.modal-overlay .modal header h2 {
+  font-size: 3rem;
+}
+
+.modal-overlay .modal header .close-btn img {
+  width: 3.5rem;
+}
+
+/* -------------- modal discipline info -------------- */
+.modal-overlay .modal .discipline-info {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.modal-overlay .modal .discipline-info p {
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+.modal-overlay .modal .discipline-info span {
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 /* -------------- animations -------------- */
