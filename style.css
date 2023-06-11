@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color-light: #f6f6f6;
+  --color-light: hsl(0, 0%, 96%);
   --color-primary: hsl(175, 40%, 28%);
   --color-primary-light: hsla(175, 40%, 28%, 0.9);
 
