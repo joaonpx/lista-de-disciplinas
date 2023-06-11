@@ -18,6 +18,8 @@ body {
   font-family: "Roboto", sans-serif;
 
   color: var(--color-primary-light);
+
+  background-color: var(--color-light);
 }
 
 main {
