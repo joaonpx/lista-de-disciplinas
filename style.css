@@ -139,10 +139,6 @@ table tfoot {
   font-size: 3rem;
 }
 
-.modal-overlay .modal header .close-btn img {
-  width: 3.5rem;
-}
-
 /* -------------- modal discipline info -------------- */
 .modal-overlay .modal .discipline-info {
   display: flex;
