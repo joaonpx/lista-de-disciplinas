@@ -71,7 +71,8 @@ disciplines.forEach((discipline) => {
       modal.innerHTML = `
       <header>
         <h2>${name}</h2>
-        <a href="#" class="close-btn" onclick="Modal.close()">
+
+        <a href="#" class="close-btn">
           <img src="./assets/close.svg" alt="Botão para fechar" />
         </a>
       </header>
@@ -88,6 +89,11 @@ disciplines.forEach((discipline) => {
         </div>
       </div>
       `
+      let closeBtn = document.querySelector(".close-btn")
+
+      closeBtn.addEventListener("click", () => {
+        Modal.close()
+      })
     }
   })
 })
